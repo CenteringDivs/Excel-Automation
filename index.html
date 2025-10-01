@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="top-row">
+            <div class="top-left">
+                <label>
+                    DS:
+                    <input
+                        class="line-input"
+                        maxlength="15"
+                        placeholder="BILLY"
+                        type="text"
+                    />
+                </label>
+                <label>
+                    ASM:
+                    <input
+                        class="line-input"
+                        maxlength="15"
+                        placeholder="BOB"
+                        type="text"
+                    />
+                </label>
+            </div>
+            <div class="logo">
+                <img alt="Logo" src="logo.png" />
+            </div>
+            <div class="top-right">
+                <label
+                    >FW:
+                    <input
+                        class="line-input"
+                        maxlength="4"
+                        placeholder="40"
+                        type="text"
+                /></label>
+                <label
+                    >DATE:
+                    <input
+                        class="line-input"
+                        maxlength="9"
+                        placeholder="9/30/25"
+                        type="text"
+                /></label>
+            </div>
+        </div>
+        <div id="tools_span">TOOLS</div>
+        <div class="container_three">
+            <label
+                >CURRENT % TO SALES: <input class="line-input" type="text"
+            /></label>
+            <label
+                >LAST YEAR % TO SALES: <input class="line-input" type="text"
+            /></label>
+            <label
+                >CURRENT SHRINK $: <input class="line-input" type="text"
+            /></label>
+            <label
+                >VARIANCE TO PRIOR 2 AVERAGE $:
+                <input class="line-input" type="text"
+            /></label>
+        </div>
+        <table contenteditable="true">
+            <tr>
+                <th>Top Shrinking PG</th>
+                <th>Shrink $</th>
+                <th>Shrink %</th>
+                <th>LY Shrink %</th>
+            </tr>
+            <tr id="first_row">
+                <td>46051</td>
+                <td>6790</td>
+                <td>12.5</td>
+                <td>13.3</td>
+            </tr>
+            <tr id="second_row">
+                <td>40385</td>
+                <td>3158</td>
+                <td>5.7</td>
+                <td>6.1</td>
+            </tr>
+            <tr id="third_row">
+                <td>41505</td>
+                <td>2730</td>
+                <td>3.2</td>
+                <td>2.5</td>
+            </tr>
+        </table>
+        <div class="container_four">
+            <label>
+                OPERATIONAL ACTION PLAN FOR TOP BASED SHRINKING PRODUCT GROUP:
+                <div class="line-editable" contenteditable="true"></div>
+            </label>
+        </div>
+    </body>
+</html>
