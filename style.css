@@ -1,0 +1,153 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+}
+
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.top-left label,
+.top-right label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.top-right {
+    text-align: right;
+}
+
+.logo {
+    flex: 1;
+    text-align: center;
+}
+
+.logo img {
+    width: 18rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.line-input {
+    border: none;
+    border-bottom: 2px solid #000;
+    width: 120px;
+    max-width: 100%;
+    font-size: 20px;
+    color: rgb(0, 166, 255);
+    outline: none;
+    margin-left: 0.5rem;
+}
+
+.line-editable {
+    width: 90%;
+    min-height: 28px;
+    border-bottom: 2px solid #000;
+    font-size: 22px;
+    color: rgb(0, 166, 255);
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    margin-top: 1rem;
+}
+
+
+#tools_span {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+.container_three {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.container_three .line-input {
+    width: 30%;
+    min-width: 150px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+th,
+td {
+    border: 3px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+td {
+    color: rgb(0, 128, 255);
+    font-size: 18px;
+}
+
+.container_four {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    word-spacing: 8px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.container_four .line-editable {
+    font-weight: normal;
+    word-spacing: normal;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 1rem;
+    }
+
+    .top-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .top-left,
+    .top-right {
+        text-align: center;
+    }
+
+    .logo img {
+        width: 50%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .line-input {
+        width: 100%;
+        max-width: 200px;
+        margin-left: 0;
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    .container_three .line-input {
+        width: 100%;
+    }
+
+    th,
+    td {
+        font-size: 16px;
+        white-space: nowrap;
+    }
+}
